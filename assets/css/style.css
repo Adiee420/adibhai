@@ -1029,46 +1029,7 @@ a:hover {
     background-color: #8f8f8f; /* Background color on hover */
     color: #080707; /* Text color on hover */
 }
-.zoom-button {
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  border: 2px solid white;
-  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
-  position: relative; /* Required for absolute positioning of pseudo-element */
-  overflow: hidden; /* Hide overflow for the link container */
-}
 
-/* Box style and animation */
-.zoom-button::after {
-  content: ''; /* Required for pseudo-element */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  opacity: 0; /* Start with zero opacity */
-  transform: scale(0); /* Start with zero scale */
-  transition: transform 0.3s, opacity 0.3s;
-  z-index: -1; /* Behind the link text */
-  border: 2px solid white; /* White border */
-  border-radius: 4px; /* Rounded corners */
-}
-
-/* Show box and apply zoom effect when link is active (clicked) */
-.zoom-button:active::after {
-  opacity: 1; /* Show the white box */
-  transform: scale(1); /* Zoom in effect */
-}
-
-/* Hover effect */
-.zoom-button:hover {
-  color: black;
-}
 
 
 
